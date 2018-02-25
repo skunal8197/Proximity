@@ -123,6 +123,7 @@
 				0CC6B0FB20422EE200182E7A /* AppDelegate.swift */,
 				0CC6B1302042361100182E7A /* ViewControllers */,
 				0CC6B12F204234EB00182E7A /* Storyboards */,
+				0CC6B10A20422EE200182E7A /* Info.plist */,
 				0CC6B12E204234D000182E7A /* plists */,
 				0CC6B134204236CE00182E7A /* Constants */,
 				0CC6B10220422EE200182E7A /* Proximity.xcdatamodeld */,
@@ -152,7 +153,6 @@
 		0CC6B12E204234D000182E7A /* plists */ = {
 			isa = PBXGroup;
 			children = (
-				0CC6B10A20422EE200182E7A /* Info.plist */,
 				0CC6B12C204234C400182E7A /* GoogleService-Info.plist */,
 			);
 			path = plists;
