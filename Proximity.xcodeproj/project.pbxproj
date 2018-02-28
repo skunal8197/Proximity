@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C95088C2044A953009C9C5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C95088B2044A953009C9C5C /* GoogleService-Info.plist */; };
+		0C95088E2044B6FE009C9C5C /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C95088D2044B6FE009C9C5C /* Authentication.swift */; };
+		0C9508922044B74B009C9C5C /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9508912044B74B009C9C5C /* NavigationViewController.swift */; };
 		0CC6B0FC20422EE200182E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6B0FB20422EE200182E7A /* AppDelegate.swift */; };
 		0CC6B10120422EE200182E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6B0FF20422EE200182E7A /* Main.storyboard */; };
 		0CC6B10420422EE200182E7A /* Proximity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6B10220422EE200182E7A /* Proximity.xcdatamodeld */; };
 		0CC6B10620422EE200182E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6B10520422EE200182E7A /* Assets.xcassets */; };
-		0CC6B10920422EE200182E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6B10720422EE200182E7A /* LaunchScreen.storyboard */; };
 		0CC6B11420422EE200182E7A /* ProximityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6B11320422EE200182E7A /* ProximityTests.swift */; };
 		0CC6B11F20422EE200182E7A /* ProximityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6B11E20422EE200182E7A /* ProximityUITests.swift */; };
-		0CC6B12D204234C400182E7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6B12C204234C400182E7A /* GoogleService-Info.plist */; };
 		0CC6B133204236BE00182E7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6B132204236BE00182E7A /* Constants.swift */; };
 		0CC6B1362042379000182E7A /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6B1352042379000182E7A /* LaunchScreen.swift */; };
 		7363BA312701C27CE6C1AF86 /* Pods_Proximity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DA0F2098BE22665207A45E /* Pods_Proximity.framework */; };
@@ -40,12 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C95088B2044A953009C9C5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0C95088D2044B6FE009C9C5C /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Proximity/ViewControllers/Authentication.swift; sourceTree = SOURCE_ROOT; };
+		0C9508912044B74B009C9C5C /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		0CC6B0F820422EE200182E7A /* Proximity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proximity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC6B0FB20422EE200182E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CC6B10020422EE200182E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CC6B10320422EE200182E7A /* Proximity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Proximity.xcdatamodel; sourceTree = "<group>"; };
 		0CC6B10520422EE200182E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0CC6B10820422EE200182E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CC6B10A20422EE200182E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CC6B10F20422EE200182E7A /* ProximityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC6B11320422EE200182E7A /* ProximityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityTests.swift; sourceTree = "<group>"; };
@@ -53,7 +56,6 @@
 		0CC6B11A20422EE200182E7A /* ProximityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC6B11E20422EE200182E7A /* ProximityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityUITests.swift; sourceTree = "<group>"; };
 		0CC6B12020422EE200182E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CC6B12C204234C400182E7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CC6B132204236BE00182E7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Proximity/Constants.swift; sourceTree = SOURCE_ROOT; };
 		0CC6B1352042379000182E7A /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		0DEDCEB8582692C9B2734221 /* Pods-Proximity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proximity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proximity/Pods-Proximity.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +126,7 @@
 				0CC6B1302042361100182E7A /* ViewControllers */,
 				0CC6B12F204234EB00182E7A /* Storyboards */,
 				0CC6B10A20422EE200182E7A /* Info.plist */,
-				0CC6B12E204234D000182E7A /* plists */,
+				0C95088B2044A953009C9C5C /* GoogleService-Info.plist */,
 				0CC6B134204236CE00182E7A /* Constants */,
 				0CC6B10220422EE200182E7A /* Proximity.xcdatamodeld */,
 				0CC6B10520422EE200182E7A /* Assets.xcassets */,
@@ -150,18 +152,9 @@
 			path = ProximityUITests;
 			sourceTree = "<group>";
 		};
-		0CC6B12E204234D000182E7A /* plists */ = {
-			isa = PBXGroup;
-			children = (
-				0CC6B12C204234C400182E7A /* GoogleService-Info.plist */,
-			);
-			path = plists;
-			sourceTree = "<group>";
-		};
 		0CC6B12F204234EB00182E7A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				0CC6B10720422EE200182E7A /* LaunchScreen.storyboard */,
 				0CC6B0FF20422EE200182E7A /* Main.storyboard */,
 			);
 			path = Storyboards;
@@ -171,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				0CC6B1352042379000182E7A /* LaunchScreen.swift */,
+				0C9508912044B74B009C9C5C /* NavigationViewController.swift */,
+				0C95088D2044B6FE009C9C5C /* Authentication.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -322,8 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC6B10920422EE200182E7A /* LaunchScreen.storyboard in Resources */,
-				0CC6B12D204234C400182E7A /* GoogleService-Info.plist in Resources */,
+				0C95088C2044A953009C9C5C /* GoogleService-Info.plist in Resources */,
 				0CC6B10620422EE200182E7A /* Assets.xcassets in Resources */,
 				0CC6B10120422EE200182E7A /* Main.storyboard in Resources */,
 			);
@@ -506,9 +500,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9508922044B74B009C9C5C /* NavigationViewController.swift in Sources */,
 				0CC6B10420422EE200182E7A /* Proximity.xcdatamodeld in Sources */,
 				0CC6B1362042379000182E7A /* LaunchScreen.swift in Sources */,
 				0CC6B0FC20422EE200182E7A /* AppDelegate.swift in Sources */,
+				0C95088E2044B6FE009C9C5C /* Authentication.swift in Sources */,
 				0CC6B133204236BE00182E7A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,14 +547,6 @@
 				0CC6B10020422EE200182E7A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0CC6B10720422EE200182E7A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0CC6B10820422EE200182E7A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
