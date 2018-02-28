@@ -18,6 +18,7 @@
 		0CC6B11F20422EE200182E7A /* ProximityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6B11E20422EE200182E7A /* ProximityUITests.swift */; };
 		0CC6B133204236BE00182E7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6B132204236BE00182E7A /* Constants.swift */; };
 		0CC6B1362042379000182E7A /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6B1352042379000182E7A /* LaunchScreen.swift */; };
+		0CF304E7204774C700BC4885 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF304E6204774C700BC4885 /* User.swift */; };
 		7363BA312701C27CE6C1AF86 /* Pods_Proximity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DA0F2098BE22665207A45E /* Pods_Proximity.framework */; };
 		7DD59447AAC0CD285189024F /* Pods_ProximityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AF72EA97A376B2C2E54C05 /* Pods_ProximityUITests.framework */; };
 		E824F12B2A6F9F9D99257640 /* Pods_ProximityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7527C05643DC0B4FF38B07 /* Pods_ProximityTests.framework */; };
@@ -58,6 +59,7 @@
 		0CC6B12020422EE200182E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CC6B132204236BE00182E7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Proximity/Constants.swift; sourceTree = SOURCE_ROOT; };
 		0CC6B1352042379000182E7A /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		0CF304E6204774C700BC4885 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0DEDCEB8582692C9B2734221 /* Pods-Proximity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proximity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proximity/Pods-Proximity.debug.xcconfig"; sourceTree = "<group>"; };
 		55AF72EA97A376B2C2E54C05 /* Pods_ProximityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProximityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7527C05643DC0B4FF38B07 /* Pods_ProximityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProximityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,11 +125,12 @@
 			isa = PBXGroup;
 			children = (
 				0CC6B0FB20422EE200182E7A /* AppDelegate.swift */,
+				0CF304E8204774CE00BC4885 /* Model */,
 				0CC6B1302042361100182E7A /* ViewControllers */,
 				0CC6B12F204234EB00182E7A /* Storyboards */,
+				0CC6B134204236CE00182E7A /* Constants */,
 				0CC6B10A20422EE200182E7A /* Info.plist */,
 				0C95088B2044A953009C9C5C /* GoogleService-Info.plist */,
-				0CC6B134204236CE00182E7A /* Constants */,
 				0CC6B10220422EE200182E7A /* Proximity.xcdatamodeld */,
 				0CC6B10520422EE200182E7A /* Assets.xcassets */,
 			);
@@ -176,6 +179,14 @@
 				0CC6B132204236BE00182E7A /* Constants.swift */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		0CF304E8204774CE00BC4885 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CF304E6204774C700BC4885 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		196C6FCCD969527E36AB15FC /* Pods */ = {
@@ -506,6 +517,7 @@
 				0CC6B0FC20422EE200182E7A /* AppDelegate.swift in Sources */,
 				0C95088E2044B6FE009C9C5C /* Authentication.swift in Sources */,
 				0CC6B133204236BE00182E7A /* Constants.swift in Sources */,
+				0CF304E7204774C700BC4885 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

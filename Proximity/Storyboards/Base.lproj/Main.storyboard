@@ -64,6 +64,9 @@
                                 <state key="normal" title="Create a New Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createNewAccountBtnTapped:" destination="lNI-JD-4Z4" eventType="touchUpInside" id="Hwa-Oq-mnP"/>
+                                </connections>
                             </button>
                             <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9jc-Sm-a9Q" userLabel="Dark Overlay View">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -82,10 +85,18 @@
                     </view>
                     <connections>
                         <outlet property="darkView" destination="9jc-Sm-a9Q" id="Daf-ZI-ZT8"/>
+                        <outlet property="loginPasswordField" destination="OCY-i3-w7n" id="NbQ-ye-kpL"/>
+                        <outlet property="loginUsernameField" destination="5RX-dF-RMv" id="rif-I2-79I"/>
+                        <outlet property="loginView" destination="Wip-4H-MgC" id="LSr-7v-zGM"/>
+                        <outlet property="signUpPasswordField" destination="dRY-oi-iHF" id="W4b-aA-NPh"/>
                         <outlet property="signUpUsernameField" destination="Zh4-O9-vxf" id="DT5-xI-bmM"/>
                         <outlet property="signUpView" destination="mTe-g9-Bwb" id="TOR-mE-8b8"/>
                         <outlet property="spinner" destination="lCR-jB-H0h" id="CA3-Ct-OwI"/>
                         <outletCollection property="inputFields" destination="Zh4-O9-vxf" collectionClass="NSMutableArray" id="mph-EA-Ot0"/>
+                        <outletCollection property="warningLabels" destination="asp-1Q-fbf" collectionClass="NSMutableArray" id="Jj2-8L-DWs"/>
+                        <outletCollection property="warningLabels" destination="USg-2u-fpW" collectionClass="NSMutableArray" id="Zgq-XP-wVg"/>
+                        <outletCollection property="inputFields" destination="dRY-oi-iHF" collectionClass="NSMutableArray" id="J8q-qj-hUI"/>
+                        <outletCollection property="inputFields" destination="5RX-dF-RMv" collectionClass="NSMutableArray" id="dQD-AL-z8V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGy-JC-WAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -97,6 +108,9 @@
                             <rect key="frame" x="138" y="381" width="55" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Sign Up"/>
+                            <connections>
+                                <action selector="signUpBtnTapped:" destination="lNI-JD-4Z4" eventType="touchUpInside" id="gDR-In-c7l"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Something went wrong... Please try again." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asp-1Q-fbf">
                             <rect key="frame" x="47" y="352" width="236" height="21"/>
@@ -109,7 +123,7 @@
                             <rect key="frame" x="33" y="112" width="264" height="160"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8dW-lL-zEj">
+                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8dW-lL-zEj" userLabel="Username View">
                                     <rect key="frame" x="0.0" y="0.0" width="264" height="80"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="nnK-Dw-iq3">
@@ -150,7 +164,7 @@
                                         <constraint firstItem="Zh4-O9-vxf" firstAttribute="leading" secondItem="nnK-Dw-iq3" secondAttribute="trailing" constant="12" id="yCv-f3-RgS"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="363-S8-ohc">
+                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="363-S8-ohc" userLabel="Password View">
                                     <rect key="frame" x="0.0" y="80" width="264" height="80"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="juO-tR-e1I">
@@ -201,7 +215,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="12e-Zh-gXZ">
                             <rect key="frame" x="45" y="12" width="362" height="335"/>
                             <subviews>
-                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOc-aG-ZCs">
+                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOc-aG-ZCs" userLabel="Username View">
                                     <rect key="frame" x="0.0" y="0.0" width="362" height="167.5"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="vkg-0Y-1Zg">
@@ -211,7 +225,7 @@
                                                 <constraint firstAttribute="width" constant="24" id="ajB-X8-o5H"/>
                                             </constraints>
                                         </imageView>
-                                        <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5RX-dF-RMv">
+                                        <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5RX-dF-RMv" userLabel="Login Usename Field">
                                             <rect key="frame" x="36" y="118.5" width="326" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="j4a-Qt-Eap"/>
@@ -239,7 +253,7 @@
                                         <constraint firstItem="5RX-dF-RMv" firstAttribute="centerY" secondItem="vkg-0Y-1Zg" secondAttribute="centerY" id="xmY-AR-pAe"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ZT-Ai-g9L">
+                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ZT-Ai-g9L" userLabel="Password View">
                                     <rect key="frame" x="0.0" y="167.5" width="362" height="167.5"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="SVN-7g-16l">
@@ -249,7 +263,7 @@
                                                 <constraint firstAttribute="width" constant="24" id="Lo7-aW-wzI"/>
                                             </constraints>
                                         </imageView>
-                                        <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OCY-i3-w7n">
+                                        <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OCY-i3-w7n" userLabel="Login Password Field">
                                             <rect key="frame" x="36" y="118.5" width="326" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="hGl-FZ-D0z"/>
